@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a href="#conjuntos">Conjuntos</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div id="conjuntos">
+        <div>
+        </div>
+        <div class="grid">
+            <div class="col" id="checkbox">
+                <input type="radio" name="feira" id="legumes"> Legumes
+                <input type="radio" name="feira" id="verduras"> Verduras
+            </div>
+            <div class="col" id="insert">
+                <br>
+                <label for="">Insira uma fruta: </label>
+                <input type="text" name="item" id="item">
+            </div>
+            <div class="col" id="buttons">
+                <button onclick="add()" class="button">Add</button>
+                <button onclick="remove()" class="button">Remove</button>
+                <button onclick="unir()" class="button">unir</button>
+                <button onclick="limparlista()" class="button">Limpar Lista</button>
+            </div>
+            <div class="col" id="res">
+                <p id="res"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/set.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
