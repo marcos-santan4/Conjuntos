@@ -84,7 +84,7 @@ label {
 }
 
 .button:hover {
-    background: #ec0b36 url(/Aula07_Set/Codigo_Aula/assets/img/pixel.png);
+    background: #ec0b36 url(./img/pixel.png);
     color: #E9EEF1;
     transition-delay: 0.3s;
     background-size: 180px;
