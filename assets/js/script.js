@@ -54,8 +54,10 @@ function remove() {
 }
 
 function unir() {
-    feiraDaSemana.union(setA).union(setB);
-    res.innerHTML = `Feira da Semana: ${feiraDaSemana.union(setA).union(setB).values()}`
+    if (!setA.size() == 0 && !setB.size() == 0) {
+        feiraDaSemana.union(setA).union(setB);
+        res.innerHTML = `Feira da Semana: ${feiraDaSemana.union(setA).union(setB).values()}`
+    }
 }
 
 function limparlista() {
@@ -77,6 +79,13 @@ function info() {
 
 }
 
+function save() {
+    let name = "Feira de Semana";
+    let text = feiraDaSemana.union(setA).union(setB).values();
+
+    var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, name);
+}
 // const setB = new Set();
 
 // setA.add('Banana');
